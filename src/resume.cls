@@ -140,6 +140,10 @@
 	\section{Activities and Intrests}
 	\noindent\rule{\textwidth}{\secline}
 }
+\newcommand{\StudentTeams}{
+	\section{Activities and Intrests}
+	\noindent\rule{\textwidth}{\secline}
+}
 
 % Begin custom templates
 % Wide column
@@ -190,4 +194,8 @@
 	\par\vspace{12pt} % Dirty hack to make the spacing look nicer
 	\noindent\large\textbf{#1} \hfill \normalsize\textbf{#2}
 }
-
+% Student Team {name}{date}
+\newcommand{\StudentTeam}[2]{
+	\par\vspace{12pt} % Dirty hack to make the spacing look nicer
+	\noindent\large\textbf{#1} \hfill \normalsize\textbf{#2}
+}
