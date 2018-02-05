@@ -29,6 +29,12 @@
 \definecolor{ubcblue}{RGB}{0,40,89}
 \definecolor{ubcgrey}{RGB}{116,145,163}
 
+% Allow hyperlinks (and also disable ugly bounding box around them)
+\usepackage[hidelinks]{hyperref}
+
+% Remove styling for links
+\urlstyle{sf}
+
 % Redefine \maketitle to resemble Co-op template
 \fancypagestyle{ubcheader}{
 	% Add whitespace to bottom of header
@@ -53,8 +59,8 @@
 			\begin{tabular}{l l}
 				Engineering Co-op Program & Phone (604) 822-3022 \\
 				Faculty of Applied Science & Fax (604) 822-3449 \\
-				2385 East Mall & eng.coop@ubc.ca \\
-				Vancouver, BC Canada V6T 1Z4 & www.ubcengineeringcoop.com
+				2385 East Mall & \href{mailto:eng.coop@ubc.ca}{eng.coop@ubc.ca} \\
+				Vancouver, BC Canada V6T 1Z4 & \url{www.ubcengineeringcoop.com}
 			\end{tabular}
 		}
 	}
@@ -70,7 +76,10 @@
 \newcommand{\address}[1]{
 	\def\theaddress{#1}
 }
-
+\def\theextras{}
+\newcommand{\extras}[1]{ % Added at bottom of title (use to add things like website or github)
+	\def\theextras{#1}
+}
 % Necessary for \theauthor in redefined \maketitle
 \usepackage{titling}
 
@@ -85,8 +94,10 @@
 		\vspace{12pt}
 
 		\theaddress \\
-		Email: \theemail \\
-		Phone: \thephone \par
+		Email: \href{mailto:\theemail}{\theemail} \\
+		Phone: \thephone \\
+		\theextras
+		\par
 	\end{centering}
 }
 
@@ -141,7 +152,7 @@
 	\noindent\rule{\textwidth}{\secline}
 }
 \newcommand{\StudentTeams}{
-	\section{Activities and Intrests}
+	\section{Student Teams}
 	\noindent\rule{\textwidth}{\secline}
 }
 
