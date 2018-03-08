@@ -41,11 +41,11 @@
 \renewcommand{\maketitle}{
 	\theaddress \\
 	\thecity
-	
+
 	\thedate
-	
+
 	\thecompany \\
-	c/p UBC Engineering Co-op Office
+	c/o UBC Engineering Co-op Office
 
 	Re: \theposition
 
