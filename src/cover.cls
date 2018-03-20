@@ -33,6 +33,14 @@
 	\def\thefor{#1}
 }
 
+% Add command for closing sentence
+\usepackage[hidelinks]{hyperref}
+\def\alternatecontact{Alternatively, I can be reached directly at \href{mailto:jasper.chan@alumni.ubc.ca}{jasper.chan@alumni.ubc.ca}.}
+\newcommand{\contactme}[1][\alternatecontact]{
+	To arrange an interview, please contact the Co-op Office at (604) 822-6995 or \href{mailto:coop.interviews@ubc.ca}{coop.interviews@ubc.ca}.
+	#1
+}
+
 % Necessary for \theauthor in redefined \maketitle
 \usepackage{titling}
 
