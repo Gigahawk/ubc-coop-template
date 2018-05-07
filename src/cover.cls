@@ -26,6 +26,9 @@
 \newcommand{\company}[1]{
 	\def\thecompany{#1}
 }
+\newcommand{\jobid}[1]{
+	\def\thejobid{#1}
+}
 \newcommand{\position}[1]{
 	\def\theposition{#1}
 }
@@ -55,7 +58,13 @@
 	\thecompany \\
 	c/o UBC Engineering Co-op Office
 
-	Re: \theposition
+	% Handle job title depending on if \thejobid is defined
+	Re:
+	\ifx\thejobid\undefined
+	\theposition
+	\else
+	\theposition\space(Job ID: \thejobid)
+	\fi
 
 	Dear \thefor:\par
 }
