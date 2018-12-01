@@ -127,6 +127,10 @@
 	\section{Academic \& Co-op Status} 
 	\noindent\rule{\textwidth}{\secline}
 }
+\newcommand{\CoopWorkExperience}{
+    \section{Co-op Work Experience}
+	\noindent\rule{\textwidth}{\secline}
+}
 \newcommand{\TechnicalProjects}{
 	\section{Technical Projects} 
 	\noindent\rule{\textwidth}{\secline}
