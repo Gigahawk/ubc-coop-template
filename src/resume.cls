@@ -29,11 +29,6 @@
 \definecolor{ubcblue}{RGB}{0,40,89}
 \definecolor{ubcgrey}{RGB}{116,145,163}
 
-% Allow hyperlinks (and also disable ugly bounding box around them)
-\usepackage[hidelinks]{hyperref}
-
-% Remove styling for links
-\urlstyle{sf}
 
 % Redefine \maketitle to resemble Co-op template
 \fancypagestyle{ubcheader}{
@@ -105,6 +100,12 @@
 % Allow section formatting
 \usepackage{sectsty}
 \usepackage{titlesec}
+
+% Allow hyperlinks (and also disable ugly bounding box around them)
+\usepackage[hidelinks]{hyperref}
+
+% Remove styling for links
+\urlstyle{sf}
 
 % Set section font
 \allsectionsfont{\large\bfseries\sffamily\color{ubcgrey}}

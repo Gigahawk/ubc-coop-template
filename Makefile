@@ -4,6 +4,7 @@ RESDIR = res
 
 all:
 	latexmk -f -pdf -output-directory=../$(BUILDDIR) -cd $(SOURCEDIR)/*.tex
+	latexmk -f -pdf -output-directory=../$(BUILDDIR) -cd $(SOURCEDIR)/*.tex
 	latexmk -f -c -output-directory=../$(BUILDDIR) -cd $(SOURCEDIR)/*.tex
 
 clean:
