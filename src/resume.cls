@@ -186,31 +186,31 @@
 
 % Technical Project {title}{date}
 \newcommand{\TechnicalProject}[2]{
-	\par\vspace{12pt} % Dirty hack to make the spacing look nicer
+    \par\vspace{6pt} % Dirty hack to make the spacing look nicer
 	\noindent\large\textbf{#1} \hfill \normalsize\textbf{#2}
 }
 
 % Job {location}{date}{position}
 \newcommand{\Job}[3]{
-	\par\vspace{12pt} % Dirty hack to make the spacing look nicer
+	\par\vspace{6pt} % Dirty hack to make the spacing look nicer
 	\noindent\large\textbf{#1} \hfill \normalsize\textbf{#2}\\
 	\noindent\textit{\textbf{#3}}
 }
 
 % School {name}{date}{program}
 \newcommand{\School}[3]{
-	\par\vspace{12pt} % Dirty hack to make the spacing look nicer
+	\par\vspace{6pt} % Dirty hack to make the spacing look nicer
 	\noindent\large\textbf{#1} \hfill \normalsize\textbf{#2}\\
 	\noindent\textit{\textbf{#3}}
 }
 
 % Affiliation {name}{date}
 \newcommand{\Affiliation}[2]{
-	\par\vspace{12pt} % Dirty hack to make the spacing look nicer
+	\par\vspace{6pt} % Dirty hack to make the spacing look nicer
 	\noindent\large\textbf{#1} \hfill \normalsize\textbf{#2}
 }
 % Student Team {name}{date}
 \newcommand{\StudentTeam}[2]{
-	\par\vspace{12pt} % Dirty hack to make the spacing look nicer
+	\par\vspace{6pt} % Dirty hack to make the spacing look nicer
 	\noindent\large\textbf{#1} \hfill \normalsize\textbf{#2}
 }
