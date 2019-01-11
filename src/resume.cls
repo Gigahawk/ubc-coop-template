@@ -152,8 +152,8 @@
 	\section{Professional Affiliations}
 	\noindent\rule{\textwidth}{\secline}
 }
-\newcommand{\Intrests}{
-	\section{Activities and Intrests}
+\newcommand{\Interests}{
+	\section{Activities and Interests}
 	\noindent\rule{\textwidth}{\secline}
 }
 \newcommand{\StudentTeams}{
