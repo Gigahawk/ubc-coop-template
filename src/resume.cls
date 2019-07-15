@@ -29,6 +29,8 @@
 \definecolor{ubcblue}{RGB}{0,40,89}
 \definecolor{ubcgrey}{RGB}{116,145,163}
 
+% Disable paragraph indent
+\setlength{\parindent}{0pt}
 
 % Redefine \maketitle to resemble Co-op template
 \fancypagestyle{ubcheader}{
@@ -111,7 +113,7 @@
 \allsectionsfont{\large\bfseries\sffamily\color{ubcgrey}}
 
 % Remove gap between section and rule
-\titlespacing\section{0pt}{18pt}{0pt}
+\titlespacing\section{0pt}{12pt}{0pt}
 
 % Remove numbering from sections
 \setcounter{secnumdepth}{0}
@@ -183,6 +185,23 @@
 			\textbullet\hspace{1.4pt} Completed #4/5 Work terms; available for #5 beginning #6
 		\end{tabularx}
 	\end{table}
+}
+
+% https://tex.stackexchange.com/questions/87830/list-delimited-by-commas-not-lines
+\newenvironment{TechSkills}[1]{
+    \newif\iffirst
+    \firsttrue
+    \renewcommand\item{
+        \unskip
+        \ifvmode
+        \else
+            \iffirst
+                \firstfalse
+            \else
+                $\bullet$\ 
+            \fi
+        \fi
+    }\textbf{#1:}
 }
 
 % Technical Project {title}{date}
