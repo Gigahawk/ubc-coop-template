@@ -113,7 +113,7 @@
 \allsectionsfont{\large\bfseries\sffamily\color{ubcgrey}}
 
 % Remove gap between section and rule
-\titlespacing\section{0pt}{12pt}{0pt}
+\titlespacing\section{0pt}{11pt}{0pt}
 
 % Remove numbering from sections
 \setcounter{secnumdepth}{0}
